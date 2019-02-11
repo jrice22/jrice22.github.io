@@ -135,6 +135,9 @@ aside {
     
 }
 footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: black;
     color: white;
     grid-column: 1/span 4;
