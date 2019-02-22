@@ -8,7 +8,7 @@
 body {
    display: grid;
  grid-template-columns: repeat(4,1fr);
- grid-template-rows: 5em 70vh auto 30vh auto 50vh 35vh;
+ grid-template-rows: 8em 70vh auto 30vh auto 50vh 35vh;
     margin: 0;
     
     
@@ -23,32 +23,52 @@ header {
     
 }
 
-#logo {
-    
-}
 
-article {
-    display: flex;
-    justify-content: flex-end;
+
+.nav {
+    display: grid;
+    justify-content: center;
     align-items: center;
+    background-color: #252525;
+    color: #e9d20f;
+    grid-column: 1/span 4;
+    padding: 0;
+    
+    
+    
+    
+   
+    
 }
 
 .logo {
+    display: flex;
+   
+    
+ 
+  
+    padding: 0 20px;
+      flex: 30%;
      font: 25px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
-	flex: 0 1 50%;
+	margin: 0;
     color: white;
+    
+   
+    
 }
 
 #navLinks  {
-    
     display: flex;
+    justify-content: flex-end;
+    
+    margin: 0;
+    flex: 70%;
     font: 25px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
     list-style-type: none;
-    justify-content: flex-end;
-    align-items: flex-end;
     
+   
     
 
         
@@ -68,8 +88,8 @@ li a {
 
 
 li {
-  height: 25px;
-  margin-right: 0px;
+  
+  
   border-left: 1px solid #aaa;
   padding: 0 20px;
     
@@ -162,15 +182,7 @@ p {
 
 
 
-article {
-    background-color: #252525;
-    color: #e9d20f;
-    grid-column: 1/span 4;
-    grid-row: 1;
-    
-   
-    
-}
+
 
 
 
@@ -356,18 +368,26 @@ aside {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
+@media (max-width: 800px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
+        padding: 30px;
 	}
-
+    
+   .footer-center {
+	display: none;
+}
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+	display: none;
+}
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
 	.footer-distributed .footer-right{
-		display: block;
+		
 		width: 100%;
-		margin-bottom: 40px;
+		
 		text-align: center;
 	}
 
@@ -378,25 +398,36 @@ aside {
 }
 
 @media (max-width: 800px) {
+    
+    article {
+        flex-direction: 
+    }
     #navLinks {
-       
+    margin: 0;
+    padding: 0;    
+    font: 10px/1 Helvetica, Verdana, sans-serif;
    
-	font: 10px/1 Helvetica, Verdana, sans-serif;
-    padding-right: 10px;
 }
+   
     
      
     #navLinks li {
+        
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0 10px;
+        flex: 100%;
 	
 }
     .logo {
+        
      font: 25px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
-	text-align: center;
-    padding-bottom: .5em;    
+	display: flex;
+    justify-content: center;
+        align-items: center;
+       
     color: white;
 }
     
