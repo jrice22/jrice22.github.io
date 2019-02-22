@@ -8,7 +8,7 @@
 body {
    display: grid;
  grid-template-columns: repeat(4,1fr);
- grid-template-rows: 5em 70vh auto 30vh 30vh 50vh 35vh;
+ grid-template-rows: 5em 70vh auto 30vh auto 50vh 35vh;
     margin: 0;
     
     
@@ -375,4 +375,45 @@ aside {
 		margin-left: 0;
 	}
 
+}
+
+@media (max-width: 800px) {
+    #navLinks {
+       
+   
+	font: 10px/1 Helvetica, Verdana, sans-serif;
+    padding-right: 10px;
+}
+    
+     
+    #navLinks li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	
+}
+    .logo {
+     font: 25px/1 Helvetica, Verdana, sans-serif;
+    text-transform: uppercase;
+	text-align: center;
+    padding-bottom: .5em;    
+    color: white;
+}
+    
+ sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+     grid-row: 1fr 1fr 1fr;
+    grid-gap: 25px; 
+    
+    grid-column: 1/span 4;
+    background-color: white;
+    
+}
+    .cards {
+        font-size: 15px;
+        text-align: center;
+    }    
+    
+    
 }
