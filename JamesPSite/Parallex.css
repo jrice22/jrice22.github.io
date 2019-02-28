@@ -39,7 +39,7 @@ svg {
     display: grid;
     justify-content: center;
     align-items: center;
-   
+    background-color: #292c2f;
 
     grid-column: 1/span 4;
     padding: 0;
