@@ -421,6 +421,35 @@ li a {
     }
 }
 
+@media (max-width: 768px) {
+    
+    #card1,
+    #card2 {
+	padding: 5%;
+}
+    
+}
+
+
+@media (max-width: 940px) {
+    .card-three {
+        padding-top: 0px;
+        margin-top: 1%;
+    }
+    .cardtwo {
+	margin-top: 1%;
+}
+    
+    
+}
+
+@media (min-width:1024px) {
+    .card-three {
+	margin-top: 10%;
+}
+    
+}
+
 @media (max-width: 700px) {
     
     
@@ -508,6 +537,15 @@ li a {
     .card-three {
 	margin-top: 5%;
 }
+    
+#card1,
+#card2  {
+	
+    padding: 9%;
+}    
+
+.  
+    
   
 }
 
