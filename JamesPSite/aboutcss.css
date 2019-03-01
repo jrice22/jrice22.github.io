@@ -115,7 +115,7 @@ li a {
     background-image: url("heading.jpg");
    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    
     
 }
 
@@ -514,10 +514,8 @@ li a {
     width: 100%;
     
 }
-   @media screen and (orientation: landscape) {
-       #headerimg {
-	height: 70vh;
-           background-position: top;
+  #headerimg {
+	background-position: center;
 }
     }
  .cardcontainer1 {
