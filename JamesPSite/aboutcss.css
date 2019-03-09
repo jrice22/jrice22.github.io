@@ -1,10 +1,10 @@
 body {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     margin: 0;
 }
-p {
+.infoparagraph {
     font-family: 'PT Sans Narrow', sans-serif;
     text-indent: 10%;
     text-align: center;
@@ -116,7 +116,7 @@ li a {
     position: relative;
     height: 50vh;
     grid-column: 1/5;
-    background-image: url("heading.jpg");
+    background-image: url("heading2.jpg");
    background-size: cover;
     background-repeat: no-repeat;
     
@@ -164,38 +164,77 @@ li a {
     
 }
 
-#card2 {
-    padding: 2em 6em;
+#card2,#card1 {
+    padding: 2em 3em;
 	
 }
-
 .cardcontainer1 {
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100vw;
     margin-top: 15%;
     margin-bottom: 15%;
     grid-row: 4;
 	padding: 1.5em;
-    display: grid;
-    grid: auto/ repeat(2, 1fr);
-    width: 100vw;
-    position: relative;
-    flex-wrap: wrap;
-    grid-gap: 2em;
     
+}
+.card-one {
+    position: relative;
+    background: white;
+	width: 500px;
+    height: auto;
+}
+.card-one img {
+    max-width: 500px;
+	width: 100%;
+    height: auto;
+}
+
+.cardtwo {
+    
+	width: 40%;
+    text-align: center;
+    height: 500px;
+    
+    
+}
+
+.card-three {
+   
+    
+	width: 40%;
+    text-align: center;
+    height: 500px;
+   
+    
+}
+.card-four {
+    position: relative;
+    background: white;
+	width: 500px;
+    
+   margin: 1.5em;
+}
+
+.card-four img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+   
    
 }
 
 
-.card-one img {
-    
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 .title1 {
     color: white;
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 85%;
     transform: translate( -50%, -50% );
      text-align: center;
@@ -212,51 +251,6 @@ li a {
    
     
 }
-
-.card-one {
-    position: relative;
-    display: inline-block;
-    overflow:hidden;
-    width: 100%;
-    margin: .5em;
-    
-   
-    
- 
-}
-
-
-.cardtwo {
-    text-align: center;
-   
-    margin-top: 30%;
- 
-    
-}
-.card-three {
-    margin-top: 10%;
-    padding-top: 100px;
-   text-align: center;
-    
-    
-}
-.card-four {
-    margin-top: 10%;
-     position: relative;
-    display: inline-block;
-    overflow:hidden;
-   
-    
-    
-	
-}
-.card-four img {
-    display: block;
-   max-width: 100%;
-    height: auto;
-	
-}
-
 
 
 .footer-distributed{
@@ -282,7 +276,7 @@ li a {
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 40%;
+	width: 30%;
 }
 
 /* The company logo */
@@ -329,7 +323,7 @@ li a {
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
-	width: 38px;
+	width: 50px;
 	height: 38px;
 	border-radius: 50%;
 	text-align: center;
@@ -444,9 +438,11 @@ li a {
     #hr {
         display: none;
     }
+    
+    
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     
     #card1,
     #card2 {
@@ -455,10 +451,19 @@ li a {
 .card-three,
 .cardtwo    {
     font-size: .8em;
+      
+} 
+.cardtwo {
+	width: 100%;
+    height: 20em; 
+}
     
-    
-    
+.card-three {
+	width: 100%;
+    height: 20em;
+    margin-top: 5%;
 }    
+  
     
  
     
@@ -466,12 +471,9 @@ li a {
 
 
 @media (max-width: 940px) {
-    .card-three {
-        padding-top: 0px;
-        margin-top: 1%;
-    }
+   
     .cardtwo {
-	margin-top: 1%;
+	margin-top: 2%;
 }
     
     
@@ -487,7 +489,9 @@ li a {
 	margin: 0;
     padding-top: 10%; 
 }    
-    
+      .card-four {
+	width: 400px;
+}
     
 }
 
@@ -504,10 +508,7 @@ li a {
 	background-position: center;
 }
     
-    .card-one {
-	margin: 0%;
-   
-}
+  
     
     
     
