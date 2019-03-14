@@ -105,9 +105,9 @@ li a {
 
 #form_container
 {
-	padding:15px 15px;
-	margin-top:15px;
-    margin: 0 auto;
+	padding: 2em 2em;
+	margin-bottom: 15%;
+   
 	background: rgba(0,0,0,0.5);	
 	color:#fff;
 }
@@ -129,6 +129,17 @@ li a {
 }
 
 
+.form-error {
+    color: red;
+}
+
+.form-success {
+    color: green;
+}
+
+.input-error {
+    box-shadow: 0 0 5px red;
+}
 
 
 
