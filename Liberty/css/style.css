@@ -35,13 +35,13 @@ header {
     z-index: 2;
     height: 10em;
     display: flex;
-    justify-content: space-around;
+    
    
 }
 .logo {
-    height: 100px;
+    height: 150px;
     width: auto;
-    margin-left: 12%;
+    margin-left: 5%;
     margin-top: 5px;
 }
 
@@ -53,9 +53,11 @@ header {
 }
 
 .grid1 {
+    
     width: 300px;
     margin-top: 20px;
-   
+    margin-left: 20%;
+    margin-right: 5%;
     
 }
 
@@ -217,17 +219,19 @@ span {
     width: 85%;
     margin-left: 7.5%;
     column-gap: 5rem;
+    justify-content: center;
+    align-content: stretch;
+    
+
 }
 
 
-.gridrow h3 {
-    padding-bottom: 30px;
-}
+
 
 .services {
     grid-column: 1 / span 10;
     grid-row: 16 / span 16;
-    background-color: #eeeeee;
+    background-color: #f7f7f7;
     padding: 80px 0;
    position: relative;
 }
@@ -264,6 +268,12 @@ span {
 .box1 {
     text-align: center;
     
+    
+}
+
+.box1 h3,
+.box2 h3 {
+    padding-bottom: 25px;
 }
 
 
@@ -291,11 +301,18 @@ span {
 
 .box2 {
     text-align: center;
-    
+  
 }
 .box3 {
+    
     text-align: center;
+    
+    
    
+}
+
+.box3 h3 {
+    padding-bottom: 25px
 }
 
 
@@ -374,12 +391,152 @@ span {
 
 
 
+/** SCHEDULE APPOINTMENT ******************************/
+/*******************************************/
 
+
+
+
+/*
+footer {
+    grid-column: 1 / span 10;
+    grid-row: span 5;
+    background-color: #30302f;
+    position: relative;
+    color: #eaeaea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  
+}
+
+*/
 
 footer {
     grid-column: 1 / span 10;
     grid-row: span 5;
-    background-color: lightseagreen;
-  
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   position: relative;
+
 }
 
+.footer-nav {
+    list-style-type: none;
+   
+}
+
+.footer-navi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    list-style: none;
+   
+   
+    
+}
+
+.footer-nav li,
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+    margin: 0;
+}
+
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #39ae38;
+}
+
+.footer-nav li a:after {
+    padding-bottom: 4px;
+    display: block;
+    content: '';
+    border-bottom: solid 1px #39ae38;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+    
+}
+
+.footer-nav li a:hover:after { transform: scaleX(1); }
+
+.social-icons li a:link,
+.social-icons li a:visited {
+    font-size: 160%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+.ion-logo-twitter:hover {
+    color: #00aced;
+}
+.ion-logo-googleplus:hover {
+    color: #dd4b39;
+}
+.ion-logo-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    
+    margin-top: 60px;
+}
+
+
+.footer-logo {
+   position: absolute;
+  
+    height: 100px;
+    width: auto;
+    top: 15px;
+}
