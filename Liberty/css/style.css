@@ -53,8 +53,8 @@ header {
 }
 
 .grid1 {
-    
-    width: 300px;
+    background: red;
+    width: 320px;
     margin-top: 20px;
     margin-left: 20%;
     margin-right: 5%;
@@ -74,7 +74,7 @@ header {
 
 
 .grid2 {
-    
+    background: red;
     margin-top: 20px;
     width: 300px;
     margin-right: 5%;
