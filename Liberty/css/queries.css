@@ -112,7 +112,7 @@
     
 
     .logo {
-        height: 4.5em;
+        height: 5.5em;
         margin-left: 2%;
         margin-top: 20px;
     }
@@ -124,6 +124,17 @@
        
       flex-flow: column-reverse;
    }
+
+   .grid1 p {
+        font-family: 'Oswald', sans-serif;
+   }
+
+   .hours {
+    
+    color: #30302f;
+    font-weight: bold;
+    
+}
 
    .phone {
     visibility: hidden;
