@@ -65,9 +65,17 @@ header {
     
 }
 
+.hours {
+    
+    color: #30302f;
+    font-weight: bold;
+    
+}
+
 
 .grid1 p {
     display: inline-block;
+    font-family: 'Oswald', sans-serif;
 }
 
 
