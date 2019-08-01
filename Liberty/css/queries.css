@@ -1,0 +1,175 @@
+/* Big Tablet to 1200px from 1024px - 1200px */
+
+@media only screen and (max-width: 1400px) {
+
+    .nav {
+        width: 50%;
+        padding: 30px .2em;
+    }
+
+    .fixed-nav nav {
+        padding: 30px .2em;
+    }
+
+    .nav ul li a:link,
+    .nav ul li a:visited {
+
+    font-size: 85%;
+    transition: color 300ms;
+}
+
+
+
+.nav ul li { display: inline-block; padding: .5em; }
+
+
+.logo {
+    height: 6em;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Small tablet to Big Tablet from 768px - 1023px */
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px;}
+
+
+    .logo {
+        height: 5.5em;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+
+    .gridrow {
+        width: 90%;
+        margin-left: 5%;
+        column-gap: 2rem;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Small phones to small tablets from 481px - 767px */
+
+@media only screen and (max-width: 767px) {
+
+    body { font-size: 15px;}
+
+    .nav {
+        top: 110px;
+        width: 60%;
+    }
+
+
+    .footer-logo {
+         height: 75px;
+         width: auto;
+         top: 55px;
+     }
+     
+
+
+
+}
+
+
+
+
+
+
+
+/* Small phones from 0 - 480px */
+
+@media only screen and (max-width: 480px) {
+    body { font-size: 14px;}
+
+    .nav {
+        top: 110px;
+        width: 100%;
+    }
+    
+
+    .logo {
+        height: 5.5em;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+
+   .grid1 {
+       
+       display: flex;
+      margin-left: 15%;
+       
+      flex-flow: column-reverse;
+   }
+
+   .phone {
+    visibility: hidden;
+       margin: 0;
+       padding: 0;
+   }
+
+   .time {
+       visibility: hidden;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .gridrow {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
+    grid-gap: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    display: none;
+}
+    
+footer {
+    grid-column: 1 / span 10;
+    grid-row: span 5;
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+   position: relative;
+
+}
+
+.footer-logo {
+    height: 50px;
+    top: 75px;
+}
+    
+
+}
+
+
+
