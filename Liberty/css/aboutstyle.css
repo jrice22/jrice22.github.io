@@ -1,3 +1,11 @@
+@font-face {
+    src: url(../fonts/king_super_grotesk_offc_pro.woff);
+    font-family: grotesk;
+    src: url(../fonts/MinionPro-Regular.woff);
+    font-family: MininonPro;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -59,8 +67,9 @@ header {
 .grid1 {
    
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 2%;
+    margin-right: 2%;
     flex: 1 1 20em;
    
     
@@ -70,14 +79,12 @@ header {
     
     color: #30302f;
     font-weight: bold;
-    
-}
-
-
-.grid1 p {
     display: inline-block;
-    font-family: 'Dosis', sans-serif;
+    font-family: "MininonPro", serif;
 }
+
+
+
 
 
 
@@ -124,12 +131,13 @@ header {
     z-index: 5;
     background: #30302f;
     padding: 30px .1em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
 
 
 .fixed-nav nav {
-
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     position: fixed;
     top: 0;
     background: #30302f;
@@ -140,7 +148,7 @@ header {
 
 
 
-span {
+.home {
     color: #39ae38;
     
     text-decoration: none;
@@ -196,19 +204,50 @@ span {
 
 .flex-container {
     grid-column: 1 / span 10;
-    grid-row: 6 / span 20;
+    grid-row: 6;
     display: flex;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    
-    
-   
+}
+
+
+.flex-cards {
+    flex: 0 1 35em;
+}
+
+.flex-cards h2 {
+    font-family: "MininonPro", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 53.2px;
+    text-transform: none;
+    margin-bottom: 5%;
+}
+
+.flex-cards p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 22.4px;
+    text-transform: none;
+}
+
+.card-span {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 22.4px;
+    text-transform: none;
 }
 
 .about {
     height: 20rem;
-    width: 35em;
     border: 3px solid #30302f;
     text-align: center;
     display: flex;
@@ -221,7 +260,7 @@ span {
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #eaeaea;        
-    
+    margin-bottom: 100px;
 }
 
 .about p {
@@ -244,7 +283,7 @@ span {
 .purpose {
     border: 3px solid #30302f;
     height: 20rem;
-    width: 35em;
+    margin-bottom: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -260,21 +299,20 @@ span {
 .commitment {
     border: 3px solid #30302f;
     height: 20rem;
-    width: 35em;
+    
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 5%;
+    
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
 
-.card-header {
-    margin-bottom: 5%;
-}
+
 
 
 
@@ -286,20 +324,76 @@ span {
 
 .info-graph {
     grid-column: 1 / span 10;
-    grid-row: 29 / span 5;
+    grid-row: 13;
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 2%;
+    flex-wrap: wrap;
+}
 
+.info-box {
+    flex: 0 1 450px;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #c9c9c9;
+    
+}
+
+.info-box h4 {
+    font-family: "MininonPro", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 53.2px;
+    text-transform: none;
+}
+
+.info-head {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: normal;
+    line-height: 22.4px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+
+
+.info-text {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 22.4px;
+    text-transform: none;
+}
+
+
+
+.icon-graph {
+    font-size: 3em;
+    color: #39ae38;
+   
+    
+    
 }
 
 
 
 .info {
     grid-column: 1 / span 10;
-    grid-row: 35 / span 10;
+    grid-row: 35 / span 12;
     background-color: white;
     text-align: center;
+    
 }

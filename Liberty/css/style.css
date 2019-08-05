@@ -56,10 +56,11 @@ header {
 }
 
 .grid1 {
-   
+    
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 2%;
+    margin-right: 2%;
     flex: 1 1 20em;
    
     
@@ -69,14 +70,12 @@ header {
     
     color: #30302f;
     font-weight: bold;
-    
-}
-
-
-.grid1 p {
     display: inline-block;
-    font-family: 'Dosis', sans-serif;
+    font-family: "MininonPro", serif;
 }
+
+
+
 
 
 
@@ -123,7 +122,7 @@ header {
     z-index: 5;
     background: #30302f;
     padding: 30px .1em;
-
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
@@ -133,7 +132,7 @@ header {
     top: 0;
     background: #30302f;
     padding: 30px .1em;
-    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
 
