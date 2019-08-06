@@ -112,7 +112,7 @@
     
 
     .logo {
-        height: 5.5em;
+        height: 5em;
         margin-left: 2%;
         margin-top: 20px;
     }
@@ -120,13 +120,13 @@
    .grid1 {
        
        display: flex;
-      margin-left: 5%;
+      margin-left: 3%;
        
       flex-flow: column-reverse;
    }
 
    .grid1 p {
-        font-family: 'Oswald', sans-serif;
+    font-family: "MininonPro", serif;
    }
 
    .hours {
