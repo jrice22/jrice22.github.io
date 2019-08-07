@@ -178,7 +178,18 @@ footer {
     height: 50px;
     top: 75px;
 }
+
+
+.landing-img {
+    grid-row: 2 / span 11;
+}
     
+.services {
+    grid-row: 13 / span 16;
+}
+
+.scroll-img {
+    grid-row: span 8;
 
 }
 
