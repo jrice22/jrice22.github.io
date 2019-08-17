@@ -34,20 +34,9 @@
 }
 
 
-
-
-
-
-
-
-
-
 /* Small tablet to Big Tablet from 768px - 1023px */
 
-@media only screen and (max-width: 1023px) {
-    
-
-
+@media only screen and (max-width: 1023px) { 
     .logo {
         height: 5.5em;
         margin-left: 5%;
@@ -61,20 +50,14 @@
         
     }
 
+
+
 }
-
-
-
-
-
-
-
 
 
 /* Small phones to small tablets from 481px - 767px */
 
 @media only screen and (max-width: 767px) {
-
     body { font-size: 15px;}
 
     .nav {
@@ -88,13 +71,8 @@
          width: auto;
          top: 55px;
      }
-     
-
-
 
 }
-
-
 
 
 
@@ -103,11 +81,12 @@
 /* Small phones from 0 - 480px */
 
 @media only screen and (max-width: 480px) {
-    body { font-size: 14px;}
+    body {font-size: 14px;}
 
     .nav {
         top: 140px;
         width: 100%;
+       
     }
     
 
@@ -158,44 +137,28 @@
     align-items: center;
 }
 
-.line {
-    display: none;
+
+
+.info-box {
+    padding: 30px;
 }
+
+
     
 footer {
-    grid-column: 1 / span 10;
-    grid-row: span 5;
+    grid-row: 20;
     background-color: #333;
     padding: 40px;
     font-size: 80%;
     display: grid;
     grid-template-columns: 1fr;
-   position: relative;
+    position: relative;
 
 }
 
 .footer-logo {
     height: 50px;
-    top: 75px;
+    top: 57px;
 }
-
-
-.landing-img {
-    grid-row: 2 / span 11;
-}
-    
-.services {
-    grid-row: 13 / span 16;
-}
-
-.scroll-img {
-    grid-row: span 8;
-
-}
-
-.sign-up {
-grid-row: span 6;
-}
-
 
 }

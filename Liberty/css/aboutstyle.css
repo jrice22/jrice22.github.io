@@ -62,6 +62,7 @@ header {
     margin-left: 10%;
     font-size: 1.8em;
     padding-right: 1.5%;
+    color: #797878;
     
     
 }
@@ -93,7 +94,7 @@ header {
 .time {
    padding-left: 5%;
    padding-right: 1.5%;
-    
+    color: #797878;
     font-size: 1.8em;
 
 }
