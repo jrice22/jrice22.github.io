@@ -45,11 +45,37 @@
 /* Small tablet to Big Tablet from 768px - 1023px */
 
 @media only screen and (max-width: 1023px) {
+    body { font-size: 16px;}
+
+    .nav {
+        width: 70%;
+    }
+
+    .grid1 {
+       
+        display: flex;
+        margin-left: 25%;
+        margin-bottom: 25px;
+        flex-direction: column;
+      
+    }
+
+
+    .phone {
+        visibility: hidden;
+           margin: 0;
+           padding: 0;
+       }
     
+       .time {
+           visibility: hidden;
+           margin: 0;
+           padding: 0;
+       }
 
 
     .logo {
-        height: 5.5em;
+        height: 7em;
         margin-left: 5%;
         margin-top: 5px;
     }
