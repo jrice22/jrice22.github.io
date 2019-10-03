@@ -19,7 +19,7 @@ body {
     grid-template-columns:repeat(10, 1fr);
     overflow-x: hidden;
     margin: 0 auto;
-   
+    
 }
 
 
@@ -192,7 +192,7 @@ span {
 /*******************************************/
 
 .landing-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/remodel.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hazmatimg.jpg");
     background-position: center;
     background-size: cover;
     grid-column: 1 / span 10;
@@ -338,7 +338,7 @@ span {
 
 
 .scroll-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/landpg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hazmatimg2.jpg");
     background-position: center;
     background-size: cover;
     grid-column: 1 / span 10;
