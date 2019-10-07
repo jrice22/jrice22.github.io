@@ -178,7 +178,7 @@ header {
 .nav ul li a:hover,
 .nav ul li a:active{
     color: #39ae38;
-
+    transition: color 300ms;
 }
 
 .nav ul li a:hover:after { transform: scaleX(1); }
