@@ -190,7 +190,7 @@
           flex-flow: column-reverse;
        }
     
-       
+      
     
        .hours {
         
@@ -206,7 +206,7 @@
        }
     
        .time {
-           visibility: hidden;
+           display: none;
            margin: 0;
            padding: 0;
        }
