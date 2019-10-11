@@ -189,6 +189,9 @@
            
           flex-flow: column-reverse;
        }
+       p {
+        margin-bottom: 1.5rem;
+    }
     
       
     
